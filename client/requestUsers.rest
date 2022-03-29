@@ -1,0 +1,146 @@
+POST http://localhost:3000/users/register 
+Content-Type: application/json
+
+{
+"username":"spyder@dominio.es", "password":"Man123ddddd*"
+}
+
+####
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+"username":"spyder@dominio.es", "password":"man"
+}
+####
+POST http://localhost:3000/users/register 
+Content-Type: application/json
+
+{
+"username":"hawkeye@dominio.es", "password":"man"
+}
+
+
+####
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+"username":"batman@dominio.es", "password":"man"
+}
+
+####
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+"username":"peter@dominio.es", "password":"pan"
+}
+####
+POST http://localhost:3000/users/grants
+Content-Type: application/json
+
+{
+"username":"peter@dominio.es", "grants":["create_database","create_role","create_table","create_view"]
+}
+####
+
+PUT http://localhost:3000/users/grants
+Content-Type: application/json
+
+{
+"username":"peter@dominio.es", "grants":["create_user","alter_table"]
+}
+
+
+####
+GET http://localhost:3000/users/aquaman@dominio.es
+
+###
+DELETE http://localhost:3000/users/grants
+Content-Type: application/json
+
+{
+"username":"peter@dominio.es", "grants":["create_database"]
+}
+
+####
+DELETE http://localhost:3000/users/grants
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es", "grants":["create_database","create_table"]
+}
+
+####
+PUT http://localhost:3000/users/grants
+Content-Type: application/json
+
+{
+"username":"aquaman@dominio.es", "grants":["create_user","alter_table"]
+}
+
+####
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+"username":"hulk@dominio.es", "password":"man$Super6"
+}
+
+####
+DELETE http://localhost:3000/users/user
+Content-Type: application/json
+
+{
+"username":"hulk@dominio.es"
+}
+####
+PUT http://localhost:3000/users/user
+Content-Type: application/json
+
+{
+"username":"hulk@dominio.es"
+}
+
+///-------------new Password-------------------
+####
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+"username":"iron@dominio.es", "password":"man$Super1"
+}
+
+####
+PUT http://localhost:3000/users/newpass
+Content-Type: application/json
+
+{
+"username":"iron@dominio.es", "password":"man$Super1", "newpassword":"man$Super2"
+}
+
+####
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+"username":"iron@dominio.es", "password":"man$Super2"
+}
+###get method
+POST http://localhost:3000/users/register 
+Content-Type: application/json
+
+{
+"username":"spyder@dominio.es", "password":"man$Super1"
+}
+###get method
+
+GET http://localhost:3000/users/spyder@dominio.es
+
+Retornar:
+
+{
+  "username": "spyder@dominio.es",
+  "timestamp": "2022-03-27T19:15:12.950Z",
+}

@@ -1,0 +1,28 @@
+{
+  "name": "objects",
+  "version": "1.0.0",
+  "description": "En aquest exercici anem afegir el paquet framework express.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "http-errors": "^2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgarciamvm/node-express-exam.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/rgarciamvm/node-express-exam/issues"
+  },
+  "homepage": "https://github.com/rgarciamvm/node-express-exam#readme"
+}

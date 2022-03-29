@@ -1,0 +1,38 @@
+
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+"username":"thor@dominio.es", "password":"god"
+}
+####
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+"username":"thor", "password":"god"
+}
+
+####
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+"username":"thor@", "password":"god"
+}
+
+####
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+"username":"thor@dominio", "password":"god"
+}
+
+####
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+"username":"thor@dominio.", "password":"god"
+}
